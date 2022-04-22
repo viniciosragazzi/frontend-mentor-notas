@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+section.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main .component{
+    width: 360px;
+    min-width: 300px;
+    margin: 0 30px;
+    height: 360px;
+    background-image: linear-gradient(143deg,#1f2a39,#131921,#131921 );
+    border-radius: 20px;
+}
+.component.none{
+     display: none;
+}
+
+
+.component .container{
+    height: 100%;
+    padding: 25px;
+    display: grid;
+    align-items: center;
+    gap: 5px;
+}
+
+.container .icon-star{
+    width: 40px;
+    height: 40px;
+    background-color: #273039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.container .text{
+    display: grid;
+    gap: 10px;
+}
+.container .text h1{
+    color: white;
+}
+.container .text p{
+    color: #8b929d;
+    font-size: 13px;
+    line-height:20px;
+}
+.numbers{
+    display: flex;
+    justify-content: space-around;
+}
+.numbers .number{
+    width: 44px;
+    height: 44px;
+    background-color: #273039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9198a2;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: .4s ease background;
+    cursor: pointer;
+}
+.numbers .number:hover{
+    background-color: #7e899a;
+    color: white;
+}
+
+.numbers span.number.selected, .numbers span.number:active{
+    background-color: #f5781b;
+    color: white;
+}
+form{
+    display: grid;
+    gap: 20px;
+}
+
+span.submit{
+    border: none;
+    height: 38px;
+    border-radius: 15px;
+    color: white;
+    transition: .4s ease background;
+    background: #f5781b;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+span.submit:hover{
+    color: #f5781b;
+    background: white;
+}
+
+.component.tanks .container{
+    justify-items: center;
+    
+}
+
+.component.tanks .container .desc-select  p{
+    color: #f5781b;
+    font-size: 13px;
+    line-height:20px;
+    background: #262f38;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+.component.tanks .container .text{
+    text-align: center;
+}
+
