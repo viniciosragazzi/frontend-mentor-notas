@@ -111,20 +111,56 @@ span.submit:hover{
     background: white;
 }
 
+.component.tanks {
+    opacity: 0;
+    top: 10px;
+    animation: show .5s ease forwards;
+    justify-items: center;
+    animation-delay: .2s;
+}
 .component.tanks .container{
+    
     justify-items: center;
     
 }
-
+.component.tanks .container .img-topo{
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    animation: show .5s ease forwards;
+    animation-delay: .3s;
+}
 .component.tanks .container .desc-select  p{
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    animation: show .5s ease forwards;
     color: #f5781b;
     font-size: 13px;
     line-height:20px;
     background: #262f38;
     padding: 6px 10px;
     border-radius: 15px;
+    animation-delay: .3s;
 }
 .component.tanks .container .text{
     text-align: center;
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    animation: show .5s ease forwards;
+    animation-delay: .6s;
 }
 
+
+@keyframes show {
+  
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}

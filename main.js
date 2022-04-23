@@ -17,7 +17,11 @@ let screen2 = document.querySelector('.component.tanks')
 let numberSelect = document.querySelector('#number-selected')
 
 submit.addEventListener('click', ()=>{
+    if(n !== undefined){
         screen1.classList.add('none')
         screen2.classList.remove('none')
         numberSelect.textContent = n
+    }else{
+        alert('Você precisa selecionar uma das notas abaixo!')
+    }
 })
